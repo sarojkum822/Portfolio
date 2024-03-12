@@ -37,7 +37,7 @@ const Navbar = () => {
                                     <a href='#mail' className='text-nowrap text-base relative font-light rounded-sm  hover:bg-sky-600 hover:text-white'>Mail</a>
                                     <a href='#instagram' className='text-nowrap text-base relative font-light rounded-sm  hover:bg-sky-600 hover:text-white'>Instagram</a>
                             </ul> : null}</span></a>
-                        <a  href='#protfolio' className='mr-8 select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light'>Protfolio</a>
+                        <a  href='#portfolio' className='mr-8 select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light'>Portfolio</a>
                     </ul>
                 </div>
                 <div className='md:hidden lg:hidden'>
@@ -56,7 +56,7 @@ const Navbar = () => {
                         <a href='#skills' className='select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light hover:bg-zinc-500'>Skills</a>
                         <a href='#blog' className='select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light hover:bg-zinc-500'>Blog</a>
                         <a className='select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light hover:bg-zinc-500'>Contact Us</a>
-                        <a href='#protfolio' className='select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light hover:bg-zinc-500'>Protfolio</a>
+                        <a href='#portfolio' className='select-none translate-all ease-in-out hover:scale-110 cursor-pointer text-2xl font-light hover:bg-zinc-500'>Portfolio</a>
                     </ul> : null}
                 </div>
             </div>
