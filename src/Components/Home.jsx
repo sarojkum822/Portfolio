@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AppText } from './Constants'
 import Saroj_kumar_Resume from '../assets/Saroj_kumar_Resume.pdf'
 // import image from 'profile.jpeg'
+
+// import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 const ResumeViewerModal = ({ isOpen, onClose }) => {
@@ -44,11 +47,22 @@ const Home = () => {
     setResumeModalOpen(false);
   };
 
+  useEffect(()=>{
+      gsap.to('#name',{
+        x:509,
+        duration:0.8,
+        delay:0.6,
+        stagger:0.4
+
+      })
+    
+  })
+
   return (
     <div className='p-10 w-full flex justify-between'>
       <div className='w-[60%]'>
-        <h1 className='text-[40px] font-medium'>{AppText.hello}</h1>
-        <h2 className='text-[40px]'>{AppText.Iam}, <span className='text-purple-500 font-medium'>{AppText.SarojKumar}</span></h2>
+        <h1 className='text-[40px] font-medium ml-[-70vh]' id='name'>{AppText.hello}</h1>
+        <h2 className='text-[40px] ml-[-70vh]' id='name'>{AppText.Iam}, <span className='text-purple-500 font-medium'>{AppText.SarojKumar}</span></h2>
         <h1 className='text-gray-400'>{AppText.aboutMeDescripion}</h1>
         <button onClick={handleDownload} className='mt-4 w-52 gap-8 rounded-3xl text-zinc-800  pl-2 pr-2 p-2 border-b-gray-700 transition-all ease-out hover:scale-110 flex border-b-4'>Download Resume <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />

@@ -17,7 +17,7 @@ const About = () => {
             
             <div className='flex flex-col md:flex-row justify-around items-center mt-[-50px]'>
                 {aboutSection.map((item,index)=>{
-                  return   <div key={index} className='flex flex-col pl-4 pr-4 pt-4 hover:bg-sky-400 hover:text-black rounded-lg cursor-pointer'>
+                  return   <div key={index} className='flex flex-col pl-4 pr-4 pt-4  hover:text-black rounded-lg cursor-pointer transition-all ease-out hover:scale-105 shadow-xl'>
                         <img src={item.image} className='w-[250px] rounded-md  object-cover'/>
                             <div className='w-[34vh] h-[20vh] items-center text-center '>
                         <h1 className='font-bold '>{item.title}</h1>
